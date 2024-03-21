@@ -38,23 +38,23 @@ CONDITION_DESCRIPTION = {
 # NEWS PAGE
 # NEWS_API_KEY = st.secrets["NEWS_API"]
 # KEYWORD = "alzheimer"
-try:
-    NEWS_API_KEY = st.secrets["NEWS_API"]
-except KeyError:
-    st.error("Error: 'NEWS_API' secret key not found. Please check your secrets configuration.")
-    st.stop()
+# try:
+#     NEWS_API_KEY = st.secrets["NEWS_API"]
+# except KeyError:
+#     st.error("Error: 'NEWS_API' secret key not found. Please check your secrets configuration.")
+#     st.stop()
 
-# CHATBOT PAGE
-HF_EMAIL = st.secrets['HF_GMAIL']
-HF_PASS = st.secrets['HF_PASS']    
-BASE_PROMPT = st.secrets['BASE_PROMPT']
+# # CHATBOT PAGE
+# HF_EMAIL = st.secrets['HF_GMAIL']
+# HF_PASS = st.secrets['HF_PASS']    
+# BASE_PROMPT = st.secrets['BASE_PROMPT']
 
 
-# TEAM MEMBERS PAGE
-TEAM_MEMBERS = [
-    {"name": "Arpit Sengar", "role": "Developer", "links":["https://www.linkedin.com/in/arpitsengar", "https://github.com/arpy8"]},
-    {"name": "Aditya Bhardwaj", "role": "Developer", "links":["https://www.linkedin.com/in/aditya-bhardwaj-3a6437232/", "https://github.com/adityabhardwajjj"]},
-    {"name": "Harshit Jain", "role": "Developer", "links":["https://www.linkedin.com/in/harshitjainnn/", "https://github.com/HarshitJainn"]},
-    {"name": "Siddharth Mohril", "role": "Developer", "links":["https://www.linkedin.com/in/siddharth-mohril-361678250/", "https://github.com/siddharth-mohril"]},
-    {"name": "Aditya Jain", "role": "Developer", "links":["https://www.linkedin.com/in/chimpyaj/", "https://github.com/ajhasbeensummoned"]},
-]
+# # TEAM MEMBERS PAGE
+# TEAM_MEMBERS = [
+#     {"name": "Arpit Sengar", "role": "Developer", "links":["https://www.linkedin.com/in/arpitsengar", "https://github.com/arpy8"]},
+#     {"name": "Aditya Bhardwaj", "role": "Developer", "links":["https://www.linkedin.com/in/aditya-bhardwaj-3a6437232/", "https://github.com/adityabhardwajjj"]},
+#     {"name": "Harshit Jain", "role": "Developer", "links":["https://www.linkedin.com/in/harshitjainnn/", "https://github.com/HarshitJainn"]},
+#     {"name": "Siddharth Mohril", "role": "Developer", "links":["https://www.linkedin.com/in/siddharth-mohril-361678250/", "https://github.com/siddharth-mohril"]},
+#     {"name": "Aditya Jain", "role": "Developer", "links":["https://www.linkedin.com/in/chimpyaj/", "https://github.com/ajhasbeensummoned"]},
+# ]
