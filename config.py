@@ -36,9 +36,13 @@ CONDITION_DESCRIPTION = {
 }
 
 # NEWS PAGE
-NEWS_API_KEY = st.secrets["NEWS_API"]
-KEYWORD = "alzheimer"
-
+# NEWS_API_KEY = st.secrets["NEWS_API"]
+# KEYWORD = "alzheimer"
+try:
+    NEWS_API_KEY = st.secrets["NEWS_API"]
+except KeyError:
+    st.error("Error: 'NEWS_API' secret key not found. Please check your secrets configuration.")
+    st.stop()
 
 # CHATBOT PAGE
 HF_EMAIL = st.secrets['HF_GMAIL']
